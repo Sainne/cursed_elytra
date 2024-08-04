@@ -1,0 +1,37 @@
+{
+  "condition": "minecraft:all_of",
+  "terms": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "armor.chest": {
+            "items": "minecraft:elytra"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:inverted",
+      "term": {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "chest": {
+              "items": "minecraft:elytra",
+              "predicates": {
+                "minecraft:enchantments": [
+                  {
+                    "enchantments": "cursed_elytra:flight_curse"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

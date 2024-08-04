@@ -1,0 +1,10 @@
+[
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "cursed_elytra:flight_curse": 1
+    },
+    "add": true
+  }
+]
+
