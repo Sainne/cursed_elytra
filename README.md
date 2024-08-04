@@ -1,4 +1,4 @@
-# 🪽 Cursed Elytra
+# 🐦 Cursed Elytra
 A Minecraft datapack that nerfs the elytra outside The End, in order to make other transportation methods more viable.
 ## ✔️ Features
 * When you equip an elytra it becomes cursed with "Curse of Flight"
