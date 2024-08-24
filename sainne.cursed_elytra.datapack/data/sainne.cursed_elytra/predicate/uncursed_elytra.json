@@ -24,7 +24,7 @@
               "predicates": {
                 "minecraft:enchantments": [
                   {
-                    "enchantments": "cursed_elytra:flight_curse"
+                    "enchantments": "sainne.cursed_elytra:flight_curse"
                   }
                 ]
               }

@@ -44,18 +44,44 @@
                 "base": 0.1
               },
               "speed": 0.01
+            },
+            {
+              "type": "minecraft:apply_mob_effect",
+              "to_apply": "minecraft:wither",
+              "min_duration": 2,
+              "max_duration": 2,
+              "min_amplifier": 2,
+              "max_amplifier": 2
             }
           ]
         },
         "requirements": {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "location": {
-              "dimension": "minecraft:the_nether"
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "effects": {
+                    "minecraft:fire_resistance": {
+                      "amplifier": 0
+                    }
+                  }
+                }
+              }
             },
-            "periodic_tick": 13
-          }
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "location": {
+                  "dimension": "minecraft:the_nether"
+                }
+              }
+            }
+          ]
         }
       },
       {
@@ -203,4 +229,3 @@
     ]
   }
 }
-
